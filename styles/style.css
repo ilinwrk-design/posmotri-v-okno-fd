@@ -56,7 +56,6 @@ ol {
 .content {
   display: flex;
   gap: 30px;
-  width: 1140px;
   align-items: flex-end;
 }
 .search-form {
@@ -82,7 +81,6 @@ ol {
 }
 
 .content__list-container {
-  height: 534px;
   overflow: auto;
   display: flex;
   flex-direction: column;
@@ -90,8 +88,6 @@ ol {
 }
 
 .result__video-container {
-width: 711px;
-height: 386px;
 position: relative;
 background: #000;
 margin-bottom: 16px;
@@ -215,6 +211,7 @@ display: -webkit-box;
   color:#fff;
   appearance: none;
   padding: 2px 0;
+  width: 224px;
 }
 
 .search-form__textfield::placeholder{
@@ -229,6 +226,7 @@ display: -webkit-box;
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
+
 
 .search-form__pseudo-checkbox {
   width: 19px;
@@ -254,9 +252,45 @@ display: -webkit-box;
 
 .search-form__checkbox-list .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
+  cursor: pointer;
 }
 /*добавляем лейблу обводку при табе через has, но могут быть проблемы в FF */
 .search-form__label:has(.search-form__checkbox:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+.button{
+  border:1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 6px 22px;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  align-self: flex-end;
+}
+
+.more-button {
+width: 100%;
+}
+
+/* состояния кноп*/
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050; 
+}
+
+.button:focus {
+  outline: none; 
+}
+
+.button:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
