@@ -60,6 +60,7 @@ ol {
   gap: 30px;
   align-items: flex-end;
 }
+
 .search-form {
   display: flex;
   justify-content: space-between;
@@ -229,7 +230,8 @@ ol {
 .search-form__textfield:focus {
   outline: none;
 }
-/* добавляем лейблу обводку при табе через has, но могут быть проблемы в FF. Пришлось записывать 2 в 1 has, - тесты не проходили из-за дубля селекторов  */
+
+/* добавляем лейблу обводку при табе через has, но могут быть проблемы в FF. Пришлось записывать 2 в 1 has  */
 .search-form__label:has(
   .search-form__textfield:focus-visible,
   .search-form__checkbox:focus-visible
