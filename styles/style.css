@@ -229,8 +229,11 @@ ol {
 .search-form__textfield:focus {
   outline: none;
 }
-/*добавляем лейблу обводку при фокус-виз через has, но могут быть проблемы в FF */
-.search-form__label:has(.search-form__textfield:focus-visible) {
+/* добавляем лейблу обводку при табе через has, но могут быть проблемы в FF. Пришлось записывать 2 в 1 has, - тесты не проходили из-за дубля селекторов  */
+.search-form__label:has(
+  .search-form__textfield:focus-visible,
+  .search-form__checkbox:focus-visible
+) {
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
@@ -262,11 +265,6 @@ ol {
   cursor: pointer;
 }
 
-/*добавляем лейблу обводку при табе через has, но могут быть проблемы в FF */
-.search-form__label:has(.search-form__checkbox:focus-visible) {
-  outline: 1px solid #fff;
-  outline-offset: 2px;
-}
 .button {
   border: 1px solid #fff;
   background-color: transparent;
