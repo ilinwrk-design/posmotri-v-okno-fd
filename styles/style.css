@@ -54,6 +54,8 @@ ol {
 }
 
 .content {
+  width: 1140px;
+  height: 534px;
   display: flex;
   gap: 30px;
   align-items: flex-end;
@@ -85,6 +87,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  position: relative;
 }
 
 .result__video-container {
@@ -293,4 +296,35 @@ width: 100%;
 .button:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 2px;
+}
+
+.content__card-link {
+  display: block;
+
+}
+
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.content__card-link:hover .content__video-card-title {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+
+.content__list-item {
+  padding: 0 3px;
 }
