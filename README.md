@@ -1,0 +1,1 @@
+git@github.com:ilinwrk-design/posmotri-v-okno-fd.git
