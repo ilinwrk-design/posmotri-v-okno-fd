@@ -260,7 +260,7 @@ ol {
   opacity: 1;
 }
 
-.search-form__label:hover .search-form__label-text  {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
   cursor: pointer;
 }
