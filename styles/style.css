@@ -58,6 +58,7 @@ ol {
   display: flex;
   gap: 30px;
   align-items: flex-start;
+  padding-bottom: 160px;
 }
 
 .search-form {
@@ -73,7 +74,7 @@ ol {
   justify-content: flex-start;
   height: 100%;
   row-gap: 16px;
-  padding-top: 78px;
+  padding-top: 80px;
 }
 
 .content__details {
