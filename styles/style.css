@@ -12,9 +12,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  inline-size: 1200px;
-  block-size: 100%;
-  margin: auto;
+  min-block-size: 100vh;
+  margin: 0;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
@@ -55,10 +54,10 @@ ol {
 
 .content {
   width: 1140px;
-  height: 534px;
   display: flex;
   gap: 30px;
-  align-items: flex-end;
+  align-items: flex-start;
+  padding-bottom: 170px;
 }
 
 .search-form {
@@ -74,14 +73,13 @@ ol {
   justify-content: flex-start;
   height: 100%;
   row-gap: 16px;
+  padding-top: 90px;
 }
 
 .content__details {
   display: flex;
-  flex: 1 1 auto;
   flex-direction: column;
-  row-gap: 26px;
-  height: 614px;
+  gap: 26px;
   width: 399px;
 }
 
@@ -89,6 +87,7 @@ ol {
   overflow: auto;
   display: flex;
   flex-direction: column;
+  height: 296px;
   gap: 30px;
   position: relative;
 }
@@ -146,6 +145,7 @@ ol {
   line-height: 94%;
   font-weight: 700;
   text-transform: uppercase;
+  padding-top: 10px;
 }
 
 .content__accent {
@@ -178,9 +178,9 @@ ol {
   line-height: 16.2px;
   font-weight: 400;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
-  line-clamp: 2;
+  line-clamp: 4;
   overflow: hidden;
 }
 
@@ -262,7 +262,7 @@ ol {
   opacity: 1;
 }
 
-.search-form__checkbox-list .search-form__label:hover .search-form__label-text {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -270,16 +270,17 @@ ol {
 .button {
   border: 1px solid #fff;
   background-color: transparent;
+  font-weight: 700;
   color: #fff;
   font-family: inherit;
   cursor: pointer;
   padding-top: 4px;
   font-size: 18px;
+  min-height: 34px;
 }
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
   align-self: flex-end;
 }
 
@@ -313,7 +314,7 @@ ol {
   background-color: #545050;
 }
 
-.content__card-link:hover .content__video-card-title {
+.content__card-link:hover {
   text-decoration: underline;
   cursor: pointer;
 }
