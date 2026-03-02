@@ -12,8 +12,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-block-size: 100vh;
-  margin: 0;
+  inline-size: 1200px;
+  block-size: 100%;
+  margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
@@ -73,7 +74,7 @@ ol {
   justify-content: flex-start;
   height: 100%;
   row-gap: 16px;
-  padding-top: 90px;
+  padding-top: 91px;
 }
 
 .content__details {
@@ -145,7 +146,7 @@ ol {
   line-height: 94%;
   font-weight: 700;
   text-transform: uppercase;
-  padding-top: 10px;
+  padding-top: 12px;
 }
 
 .content__accent {
