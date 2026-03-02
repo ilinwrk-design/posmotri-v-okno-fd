@@ -11,7 +11,7 @@ html {
 .page {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -19,6 +19,7 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  padding: 133px 30px;
 }
 
 h1,
@@ -57,8 +58,6 @@ ol {
   width: 1140px;
   display: flex;
   gap: 30px;
-  align-items: flex-start;
-  padding-bottom: 160px;
 }
 
 .search-form {
@@ -71,7 +70,6 @@ ol {
 .result {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   height: 100%;
   row-gap: 16px;
   padding-top: 80px;
@@ -270,12 +268,11 @@ ol {
 .button {
   border: 1px solid #fff;
   background-color: transparent;
-  font-weight: 700;
   color: #fff;
   font-family: inherit;
   cursor: pointer;
-  padding-top: 4px;
   font-size: 18px;
+  font-weight: 700;
   min-height: 34px;
 }
 
