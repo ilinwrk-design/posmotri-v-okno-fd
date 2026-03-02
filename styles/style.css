@@ -72,6 +72,7 @@ ol {
   flex-direction: column;
   height: 100%;
   row-gap: 16px;
+  margin-top: 80px;
 }
 
 .content__details {
