@@ -12,7 +12,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  inline-size: 1200px;
+  block-size: 100%;
+  margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
@@ -52,11 +54,10 @@ ol {
 }
 
 .content {
-  width: 1140px;
   display: flex;
   gap: 30px;
   align-items: flex-end;
-  margin-bottom: 173px;
+  margin-bottom: 158px;
 }
 
 .search-form {
