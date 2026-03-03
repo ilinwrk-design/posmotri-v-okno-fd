@@ -4,8 +4,10 @@
   box-sizing: border-box;
 }
 
-html {
-  block-size: 100%;
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
 .page {
@@ -58,6 +60,7 @@ ol {
   display: flex;
   gap: 30px;
   align-items: flex-end;
+  padding-bottom: 157px;
 }
 
 .search-form {
